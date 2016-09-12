@@ -1,0 +1,383 @@
+interface vdsl 1/6/1
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description ""
+  profile-name "ADSL_8a-defaults"
+  latency-path delay downstream 0 16
+  latency-path delay upstream 0 16
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 0.0
+  latency-path inp upstream 0 0.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 7616
+  latency-path payload-rate upstream 0 minimum 32 maximum 896
+  service-mode adsl2-multimode
+  no shutdown
+!
+!
+interface vdsl 1/6/2
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description ""
+  profile-name "ADSL_8a-defaults"
+  latency-path delay downstream 0 16
+  latency-path delay upstream 0 16
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 0.0
+  latency-path inp upstream 0 0.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 7616
+  latency-path payload-rate upstream 0 minimum 32 maximum 896
+  service-mode adsl2-multimode
+  no shutdown
+!
+!
+interface vdsl 1/6/3
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_3"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/4
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_4"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/5
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_5"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/6
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_6"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/7
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_7"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/8
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_8"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/9
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_9"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/10
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_10"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!       
+!
+interface vdsl 1/6/11
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_11"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/12
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_12"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/13
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_13"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/14
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_14"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/15
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_15"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/16
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_16"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/17
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_17"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/18
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_18"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/19
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_19"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/20
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_20"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!       
+interface vdsl 1/6/21
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_21"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/22
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_22"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/23
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_23"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
+!
+interface vdsl 1/6/24
+  deployment region 1 scenario 2 other-service 1 application-standard 3 band-plan 1 band-profile 5 psd-u0 1 psd-mask 1
+  description "ERPS_Node_1_6_24"
+  profile-name "VDSL_12A"
+  dmt-options snr-margin downstream margins minimum 2.0 target 9.0 maximum 16.0
+  dmt-options snr-margin upstream margins minimum 2.0 target 9.0 maximum 16.0
+  latency-path delay downstream 0 4
+  latency-path init-policy downstream 0 inp
+  latency-path init-policy upstream 0 inp
+  latency-path inp downstream 0 1.0
+  latency-path inp upstream 0 2.0
+  latency-path payload-rate downstream 0 minimum 32 maximum 150000
+  latency-path payload-rate upstream 0 minimum 32 maximum 96000
+  no shutdown
+!
