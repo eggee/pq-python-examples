@@ -4,28 +4,29 @@ import time
 import getopt
 import sys
 import telnetlib
+import re
 
 #set some default variables
-ip = '10.13.100.81'
-slot = 12
+ip = '10.213.253.43'
+slot = 'a'
 
 
-#allow for cmd arguments to pass lists and file name
-try:
-	opts, args = getopt.getopt(sys.argv[1:], "hi:s:", ["help", "ip=", "slot="])
-except getopt.GetoptError as err:
-	print "usage: python {0} -h <help> -i <ip_address> -s <slot>".format(sys.argv[0])
-	print str(err) # will print something like "option -a not recognized"
-	sys.exit()
+# #allow for cmd arguments to pass lists and file name
+# try:
+# 	opts, args = getopt.getopt(sys.argv[1:], "hi:s:", ["help", "ip=", "slot="])
+# except getopt.GetoptError as err:
+# 	print "usage: python {0} -h <help> -i <ip_address> -s <slot>".format(sys.argv[0])
+# 	print str(err) # will print something like "option -a not recognized"
+# 	sys.exit()
 
-for o, a in opts:
-	if o == "-h":
-		print "usage: python {0} -h <help> -i <ip_address> -s <slot>".format(sys.argv[0])
-		sys.exit()
-	elif o == "-i":
-		ip = a
-	elif o == "-s":
-		slot = a
+# for o, a in opts:
+# 	if o == "-h":
+# 		print "usage: python {0} -h <help> -i <ip_address> -s <slot>".format(sys.argv[0])
+# 		sys.exit()
+# 	elif o == "-i":
+# 		ip = a
+# 	elif o == "-s":
+# 		slot = a
 
 
 #connect to shelf
@@ -33,7 +34,9 @@ tn = telnetlib.Telnet(ip)
 #login
 tn.read_until('Username:')
 tn.write('ADMIN\n')
-tn.read_until('Password:')
+test = re.compile(b"Password:")
+print test
+tn.expect([test])
 tn.write('PASSWORD\n')
 #look for the prompt
 tn.read_until('>')

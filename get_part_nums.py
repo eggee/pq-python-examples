@@ -3,11 +3,11 @@ import telnetlib
 #define a list
 part_num_list = list()
 
-#connect to shelf
-tn = telnetlib.Telnet('10.11.5.16')
+#connect to shelf 
+tn = telnetlib.Telnet('10.13.11.204')
 #login
-tn.read_until('Username:')
-tn.write('ADMIN\n')
+tn.read_until('cmd>')
+tn.write('configuration\n')
 tn.read_until('Password:')
 tn.write('PASSWORD\n')
 #look for the prompt

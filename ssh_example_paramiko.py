@@ -8,7 +8,7 @@ import re
 import time
 import logging
 
-logging.basicConfig(level=logging.CRITICAL)
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 class Ssh():
@@ -34,9 +34,10 @@ class Ssh():
 
     mother of all prompts:
     (^|\\n)\S+[>#]$|\$|\[y\/n\]$|\nPassword:|\nUsername:|\ncli\s+(?!\[none\])\[\w+\].*>|\ncli\s+(?!\[none\])\[\w+\].*#
+    (^|\\n)\S+[>#]$|\$|\[y\/n\]$|\nPassword:|\nUsername:|\ncli\s+(?!\[none\])\[\w+\].*>|\ncli\s+(?!\[none\])\[\w+\].*#
     """
 
-    def __init__(self, ip, prompt='(^|\\n)\S+[>#]$|\$|\[y\/n\]$|\nPassword:|\nUsername:|\ncli\s+(?!\[none\])\[\w+\].*>|\ncli\s+(?!\[none\])\[\w+\].*#', port=22, username='ADMIN', password='PASSWORD', session='ta5k'):
+    def __init__(self, ip, prompt='\S+[>#]|\$|\[y\/n\]$|\nPassword:|\nUsername:|\ncli\s+(?!\[none\])\[\w+\].*>|\ncli\s+(?!\[none\])\[\w+\].*#', port=22, username='ADMIN', password='PASSWORD', session='ta5k'):
         """
         Initialize the class
         """
@@ -198,31 +199,33 @@ if __name__ == '__main__':
 
 
     #RPi
-    # ip = "10.13.100.6"
-    # port = 22
-    # username = "alarm"
-    # password = "alarm"
+    ip = "10.13.100.6"
+    port = 22
+    username = "root"
+    password = "root"
 
-    # instance = Ssh(ip=ip, port=port, username=username, password=password)
-    # instance.createSshClient()
-    # print instance.execSshCommand("ps aux")
+    instance = Ssh(ip=ip, port=port, username=username, password=password)
+    instance.createSshClient()
+    print instance.execSshCommand("pwd")
+    print instance.execSshCommand("ifconfig")
+    print instance.execSshCommand("ps aux | grep wpa")
 
     #DPU
-    ip = "10.255.64.90"
-    port = 22
-    username = "pmasadmin"
-    password = "adtran"
-    session = 'dpu'
+    # ip = "10.255.64.90"
+    # port = 22
+    # username = "pmasadmin"
+    # password = "adtran"
+    # session = 'dpu'
 
-    instance = Ssh(ip=ip, port=port, username=username, password=password, session=session)
-    instance.createSshClient()
-    instance.dpu_login()
-    print instance.execSshCommand("configure-terminal")
-    for i in range(0,10):
-        time.sleep(1)
-        print instance.getClientStatus()
-    print instance.execSshCommand("cli session dpu https://localhost:8443/dpudatastore/id=e62dpu1/restconf")
-    print instance.execSshCommand("show interfaces-state interface 'gfast 0/1' oper-status")
+    # instance = Ssh(ip=ip, port=port, username=username, password=password, session=session)
+    # instance.createSshClient()
+    # instance.dpu_login()
+    # print instance.execSshCommand("configure-terminal")
+    # for i in range(0,10):
+    #     time.sleep(1)
+    #     print instance.getClientStatus()
+    # print instance.execSshCommand("cli session dpu https://localhost:8443/dpudatastore/id=e62dpu1/restconf")
+    # print instance.execSshCommand("show interfaces-state interface 'gfast 0/1' oper-status")
 
 
 
@@ -231,9 +234,6 @@ if __name__ == '__main__':
 
     # instance = Ssh(ip=ip)
     # instance.createSshClient()
+    # instance.execSshCommand("enable")
     # instance.execSshCommand("term len 0")
-    # print instance.execSshCommand("show ver 1/a")
-    # for i in range(0,10):
-    #     time.sleep(1)
-    #     print instance.getClientStatus()
-    # print instance.execSshCommand("sho version 1/a")
+    # print instance.execSshCommand("show version")

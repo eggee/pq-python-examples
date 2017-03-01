@@ -12,11 +12,11 @@ args = parser.parse_args()
 
 
 
-if args.ip:
-    ip = args.ip
-if args.slot:
-    slot = args.slot
+# if args.ip:
+#     ip = args.ip
+# if args.slot:
+#     slot = args.slot
     
     
-print 'hey, this is your ip: ' + ip
-print 'hey, this is your slot: ' + slot
+print 'hey, this is your ip: ' + args.ip
+print 'hey, this is your slot: ' + args.slot
