@@ -12,3 +12,5 @@ class ScoobyDoo():
         return True
     def meddling_kids(self):
         return True
+    def plot_twist(self):
+        return True
